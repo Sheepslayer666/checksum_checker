@@ -17,8 +17,8 @@ else:
 
 with open(file_name, 'rb') as file_to_check:
     data = file_to_check.read()    
-    sha256_retunred = hashlib.sha256(data).hexdigest()
-if original_sha256 == sha256_retunred:
+    ha256_returned = hashlib.sha256(data).hexdigest()
+if original_sha256 == ha256_returned:
     print("sha256 OK")
 else:
     print("sha256 NOK")
